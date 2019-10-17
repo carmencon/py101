@@ -1,43 +1,36 @@
-from random import randint
+import random
+numero = []
+while True:
+    cantidad = int(input("ingrese la cantidad digitos a jugar:  ")
+    if cantidad in [3,4,5]:
+                   break
 
+while len(numero) < cantidad:
+    digito = random.randint(0,9)
+    if digito not in numero:
+                    numero.append(digito)
 
-'''
-for i in range (30)'''
+print(numero)
+While True:
+    while True:
+        intento = input("ingrese un numero")
 
-def generar_lista(tam)
-    lista=[]
-    while len(lista)<tam:
-        numero=randint(1,9)
-        if numero not in lista:
-            lista.append(numero)
-    return lista
-        
-#print generar_lista(3)
-#suma con iteradores
-def suma(lista)
-acum=0
-    for i in lista:
-        acum+=i
-    return acum
-lista=generar_lista
-print suma(lista)
+        usuario = []
+            for i in intento:
+                if int(i) not in usuario:
+                   usuario.append(int(i))
 
-#suma recursiva
-def sum_recursiva(lista):
-    if lista==[]
-    return lista [0]+suma_recursiva([1:])
+            if len(usuario) != len(numero):
+                   print("intento no valido")
+            else:
+                break
 
+    fijas = 0
+    picas = 0
 
-def ordenar (lista):
-    for i in range (len(lista)):
-        for j in range (i+1,len(lista)):
-            if lista[i]>lista[j]:
-                lista[i],lista[j]=lista[j],lista[i]
-    return lista
-
-
-print lista
-print suma(lista), sum_recursiva(lista)
+    for i in range(len(numero)):
+        if numero(i) == digito[i]:
+                   fijas += 1
 
         
 
